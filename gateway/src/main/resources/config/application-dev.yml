@@ -44,9 +44,9 @@ spring:
       indent-output: true
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:mariadb://172.16.29.128:3306/chatbot?useLegacyDatetimeCode=false&serverTimezone=UTC
-    username: chatbot
-    password: chatbot#123
+    url: jdbc:mariadb://172.16.29.128:3306/medlatec?useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: medlatec
+    password: 123456a@
     hikari:
       poolName: Hikari
       auto-commit: false
