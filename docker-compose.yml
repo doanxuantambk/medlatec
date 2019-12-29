@@ -1,0 +1,21 @@
+version: '3.4'
+services:
+  mariadb:
+    image: doanxuantambk/mariadb:10.4.10
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456a@
+      MYSQL_DATABASE: chatbot
+      MYSQL_USER: chatbot
+      MYSQL_PASSWORD: chatbot#123
+    ports:
+            - "3306:3306"
+    expose:
+            - "3306"
+    networks:
+      - backend
+    restart: on-failure
+    volumes:
+     - ${PWD}/mariadb:/var/lib/mysql
+networks:       
+  backend:
+    driver: bridge
